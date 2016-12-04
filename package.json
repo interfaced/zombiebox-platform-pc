@@ -1,0 +1,13 @@
+{
+  "name": "zombiebox-platform-pc",
+  "version": "0.1.0",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/interfaced/zombiebox-platform-pc/issues"
+  },
+  "homepage": "https://github.com/interfaced/zombiebox-platform-pc",
+  "files": [
+    "lib/",
+    "index.js"
+  ]
+}
