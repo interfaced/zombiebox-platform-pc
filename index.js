@@ -1,11 +1,19 @@
-const path = require('path');
+/*
+ * This file is part of the ZombieBox package.
+ *
+ * Copyright (c) 2015-2019, Interfaced
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 
+const path = require('path');
+const {AbstractPlatform} = require('zombiebox');
 
 
 /**
- * @implements {ZBPlatform}
  */
-class PlatformPC {
+class PlatformPC extends AbstractPlatform {
 	/**
 	 * @override
 	 */
@@ -16,7 +24,7 @@ class PlatformPC {
 	/**
 	 * @override
 	 */
-	getPublicDir() {
+	getSourcesDir() {
 		return path.join(__dirname, 'lib');
 	}
 
@@ -30,20 +38,17 @@ class PlatformPC {
 	/**
 	 * @override
 	 */
-	buildApp(zbApp, distDir) {
-		const buildHelper = zbApp.getBuildHelper();
+	async buildApp(application, distDir) {
+		const buildHelper = application.getBuildHelper();
 
-		return buildHelper.writeIndexHtml(path.join(distDir, 'index.html'), this.getName())
-			.then((warnings) => {
-				buildHelper.copyCustomWebFiles(distDir);
+		const warnings = await buildHelper.writeIndexHTML(path.join(distDir, 'index.html'));
+		buildHelper.copyStaticFiles(distDir);
 
-				return warnings;
-			});
-
+		return warnings;
 	}
 }
 
+
 /**
- * @param {ZBApplication} zb
  */
 module.exports = PlatformPC;

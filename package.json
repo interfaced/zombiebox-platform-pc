@@ -1,13 +1,44 @@
 {
   "name": "zombiebox-platform-pc",
-  "version": "0.1.0",
+  "description": "ZombieBox platform for desktop browsers.",
+  "version": "2.1.0",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/interfaced/zombiebox-platform-pc/issues"
-  },
+  "author": "Interfaced (http://interfaced.tv)",
   "homepage": "https://github.com/interfaced/zombiebox-platform-pc",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:interfaced/zombiebox-platform-pc.git"
+  },
+  "keywords": [
+    "zombiebox",
+    "zombiebox-platform",
+    "smart-tv"
+  ],
+  "module": "./lib",
   "files": [
     "lib/",
-    "index.js"
-  ]
+    "index.js",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=8.9",
+    "npm": ">=5"
+  },
+  "scripts": {
+    "test": "npm run lint",
+    "lint": "eslint index.js lib/"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-interfaced": "^1.5.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-interfaced": "^1.6.1",
+    "eslint-plugin-node": "^9.1.0",
+    "zombiebox": "^2.0.0"
+  },
+  "peerDependencies": {
+    "zombiebox": "^2.0.0"
+  }
 }
