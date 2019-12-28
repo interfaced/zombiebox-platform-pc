@@ -1,5 +1,25 @@
 # Change log
 
+## 2.2.0 (28.12.2019)
+
+Identical to `2.2.0-alpha.3`. Changes listed are since last stable release (`2.1.0`)
+
+* Add `IStatefulVideo` implementation.
+* Implement `getPanelResolution` and `getOSDResolution` in `Info`
+* Implemented `Device.isUHD8KSupported`
+
+## 2.2.0-alpha.3 (16.12.2019)
+* Updated `Viewport` to always deal in app coordinates 
+* Implement `getPanelResolution` and `getOSDResolution` in `Info`
+
+## 2.2.0-alpha.2 (12.12.2019)
+
+* Implemented `Device.isUHD8KSupported`
+
+## 2.2.0-alpha.1 (20.11.2019)
+
+* `StatefulVideo` introduced with ZombieBox 2.3.0
+
 ## 2.1.0 (23.07.2019)
 
 Implemented platform specific video container for compatibility with ZombieBox 2.1.0
