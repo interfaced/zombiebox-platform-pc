@@ -1,5 +1,8 @@
 # Change log
 
+## 2.3.1 (03.02.2020)
+* Add externs to published files
+
 ## 2.3.0 (03.02.2020)
 * HLS support was added to both `HTML5Video` and `StatefultHtml5Video` with the help of [Hls.js](https://github.com/video-dev/hls.js/).
 * Support ZombieBox 2.6.0
