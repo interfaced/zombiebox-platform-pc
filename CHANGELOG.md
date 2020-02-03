@@ -1,5 +1,9 @@
 # Change log
 
+## 2.3.0 (03.02.2020)
+* HLS support was added to both `HTML5Video` and `StatefultHtml5Video` with the help of [Hls.js](https://github.com/video-dev/hls.js/).
+* Support ZombieBox 2.6.0
+
 ## 2.2.0 (28.12.2019)
 
 Identical to `2.2.0-alpha.3`. Changes listed are since last stable release (`2.1.0`)
