@@ -1,5 +1,8 @@
 # Change log
 
+## 2.3.2 (05.02.2020)
+* Fix runtime exception in compiled version.
+
 ## 2.3.1 (03.02.2020)
 * Add externs to published files
 
