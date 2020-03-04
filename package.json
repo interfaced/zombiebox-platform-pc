@@ -1,7 +1,7 @@
 {
   "name": "zombiebox-platform-pc",
   "description": "ZombieBox platform for desktop browsers.",
-  "version": "2.3.2",
+  "version": "2.3.3",
   "license": "MIT",
   "author": "Interfaced (http://interfaced.tv)",
   "homepage": "https://github.com/interfaced/zombiebox-platform-pc",
@@ -37,14 +37,14 @@
     "eslint-plugin-header": "^3.0.0",
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-interfaced": "^2.0.0",
-    "eslint-plugin-jsdoc": "^21.0.0",
+    "eslint-plugin-jsdoc": "^22.0.0",
     "eslint-plugin-node": "^11.0.0",
-    "zombiebox": "^2.6.1"
+    "zombiebox": "^2.7.0"
   },
   "peerDependencies": {
-    "zombiebox": "^2.6.1"
+    "zombiebox": "^2.7.0"
   },
   "dependencies": {
-    "hls.js": "^0.13.1"
+    "hls.js": "^0.13.2"
   }
 }

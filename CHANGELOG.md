@@ -1,5 +1,8 @@
 # Change log
 
+## 2.3.2 (04.03.2020)
+* Support ZombieBox 2.7 (improve start position handling)
+
 ## 2.3.2 (05.02.2020)
 * Fix runtime exception in compiled version.
 
