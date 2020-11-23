@@ -1,6 +1,9 @@
 # Change log
 
-## 2.3.2 (04.03.2020)
+## 2.3.4 (23.11.2020)
+* Update hls.js to 0.14 and use its full version 
+
+## 2.3.3 (04.03.2020)
 * Support ZombieBox 2.7 (improve start position handling)
 
 ## 2.3.2 (05.02.2020)

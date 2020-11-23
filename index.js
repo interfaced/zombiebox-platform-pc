@@ -36,7 +36,7 @@ class PlatformPC extends AbstractPlatform {
 			include: [{
 				name: 'Hls.js',
 				inlineScripts: [
-					require.resolve('hls.js').replace(/hls\.js$/, 'hls.light.min.js')
+					require.resolve('hls.js').replace(/hls\.js$/, 'hls.min.js')
 				],
 				externs: [
 					path.join(__dirname, 'externs', 'hls.js')
