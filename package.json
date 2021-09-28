@@ -31,18 +31,18 @@
     "lint": "eslint ."
   },
   "devDependencies": {
-    "eslint": "^7.14.0",
-    "eslint-config-interfaced": "^2.1.1",
+    "eslint": "^7.32.0",
+    "eslint-config-interfaced": "^2.1.2",
     "eslint-import-resolver-zombiebox": "^1.0.1",
-    "eslint-plugin-header": "^3.1.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-interfaced": "^2.0.0",
-    "eslint-plugin-jsdoc": "^30.7.8",
+    "eslint-plugin-header": "^3.1.1",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-interfaced": "^2.0.1",
+    "eslint-plugin-jsdoc": "^36.1.0",
     "eslint-plugin-node": "^11.1.0",
     "zombiebox": "^2.7.5"
   },
   "peerDependencies": {
-    "zombiebox": "^2.7.5"
+    "zombiebox": "^2.7.6"
   },
   "dependencies": {
     "hls.js": "0.14.16"
