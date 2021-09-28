@@ -1,5 +1,8 @@
 # Change log
 
+## 2.3.5 (03.06.2021)
+* Update hls.js to 1.0.5
+
 ## 2.3.4 (23.11.2020)
 * Update hls.js to 0.14 and use its full version 
 

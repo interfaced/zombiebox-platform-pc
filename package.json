@@ -45,6 +45,6 @@
     "zombiebox": "^2.7.6"
   },
   "dependencies": {
-    "hls.js": "0.14.16"
+    "hls.js": "1.0.5"
   }
 }
