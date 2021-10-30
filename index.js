@@ -1,14 +1,13 @@
 /*
  * This file is part of the ZombieBox package.
  *
- * Copyright © 2015-2020, Interfaced
+ * Copyright © 2015-2021, Interfaced
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
-const path = require('path');
-const {AbstractPlatform} = require('zombiebox');
+import path from 'path';
+import {AbstractPlatform, utils} from 'zombiebox';
 
 
 /**
@@ -25,7 +24,7 @@ class PlatformPC extends AbstractPlatform {
 	 * @override
 	 */
 	getSourcesDir() {
-		return path.join(__dirname, 'lib');
+		return utils.resolve(import.meta.url, 'lib');
 	}
 
 	/**
@@ -36,10 +35,10 @@ class PlatformPC extends AbstractPlatform {
 			include: [{
 				name: 'Hls.js',
 				inlineScripts: [
-					require.resolve('hls.js').replace(/hls\.js$/, 'hls.min.js')
+					utils.resolveNPMModule(import.meta.url, 'hls.js').replace(/hls\.js$/, 'hls.min.js')
 				],
 				externs: [
-					path.join(__dirname, 'externs', 'hls.js')
+					(new URL('externs/hls.js', import.meta.url)).pathname
 				]
 			}]
 		};
@@ -68,4 +67,4 @@ class PlatformPC extends AbstractPlatform {
 
 /**
  */
-module.exports = PlatformPC;
+export default PlatformPC;

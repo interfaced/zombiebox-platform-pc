@@ -15,6 +15,7 @@
     "smart-tv"
   ],
   "module": "./lib",
+  "type": "module",
   "files": [
     "externs/",
     "lib/",
